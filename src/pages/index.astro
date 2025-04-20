@@ -6,24 +6,27 @@ import "../styles/global.css";
 import Footer from "../components/footer.astro";
 
 const navLinks = [
-    { href: "/", text: "Home" },
-    { href: "/about", text: "About" },
-    { href: "/blog", text: "Blog" },
+    { href: "/myHome", text: "Home" },
+    { href: "/myHome/about", text: "About" },
+    { href: "/myHome/blog", text: "Blog" },
 ];
 ---
 
+<html>
 
-<meta charset="utf-8" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<meta name="viewport" content="width=device-width" />
-<meta name="generator" content={Astro.generator} />
-<title>{pageTitle}</title>
-<link rel="global" href="../styles/global.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=M+PLUS+1:wght@100..900&display=swap" rel="global">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+    <link rel="global" href="../styles/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=M+PLUS+1:wght@100..900&display=swap" rel="global">
+  </head>
 
-<body>
+  <body>
   <!-- componentの呼び出し -->
     <div class="container">
       <h1 class="pagetitle">{pageTitle}</h1>
@@ -40,7 +43,10 @@ const navLinks = [
       </div>
     </div>
     <Footer/>
-</body>
+  </body>
+
+</html>
+
 <style>
   .container {
     background-image: url("../assets/Colored_Shapes.svg");

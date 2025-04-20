@@ -13,8 +13,8 @@ import Header from "../components/header.astro";
 import Footer from "../components/footer.astro";
 
 ---
-
-
+<html>
+  <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
@@ -24,6 +24,7 @@ import Footer from "../components/footer.astro";
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kiwi+Maru&display=swap" rel="global">
+  </head>
 
   <body>
     <Header />
@@ -41,6 +42,8 @@ import Footer from "../components/footer.astro";
     </div>
   <Footer />
   </body>
+
+</html>
 
 <style>
   .container {
@@ -74,45 +77,45 @@ import Footer from "../components/footer.astro";
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* カードを自動的に並べる */
   gap: 20px; /* カード間の間隔 */
   padding: 20px; /* 全体の余白 */
-}
+  }
 
-.blog-card {
-  background-color: white; /* カードの背景色 */
-  border: 1px solid #ddd; /* 枠線を追加 */
-  border-radius: 10px; /* 角を丸くする */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
-  padding: 20px; /* 内側の余白 */
-  transition: transform 0.2s, box-shadow 0.2s; /* ホバー時のアニメーション */
-}
+  .blog-card {
+    background-color: white; /* カードの背景色 */
+    border: 1px solid #ddd; /* 枠線を追加 */
+    border-radius: 10px; /* 角を丸くする */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
+    padding: 20px; /* 内側の余白 */
+    transition: transform 0.2s, box-shadow 0.2s; /* ホバー時のアニメーション */
+  }
 
-.blog-card:hover {
-  transform: translateY(-5px); /* ホバー時に少し浮き上がる */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* ホバー時の影を強調 */
-}
+  .blog-card:hover {
+    transform: translateY(-5px); /* ホバー時に少し浮き上がる */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* ホバー時の影を強調 */
+  }
 
-.blog-card h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #333;
-}
+  .blog-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
 
-.blog-card p {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 15px;
-}
+  .blog-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
 
-.blog-card .read-more {
-  display: inline-block;
-  font-size: 1rem;
-  color: #0078d4;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.2s;
-}
+  .blog-card .read-more {
+    display: inline-block;
+    font-size: 1rem;
+    color: #0078d4;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+  }
 
-.blog-card .read-more:hover {
-  color: #0056a3; /* ホバー時のリンク色 */
-}
+  .blog-card .read-more:hover {
+    color: #0056a3; /* ホバー時のリンク色 */
+  }
 </style>
 
