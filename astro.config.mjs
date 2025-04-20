@@ -4,5 +4,5 @@ import { defineConfig } from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
     site: 'https://KRKWRT.github.io',
-    base: 'myHome',
+    base: 'KRKWRT.github.io',
 });
